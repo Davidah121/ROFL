@@ -1,0 +1,14 @@
+C:\Users\Alan\Documents\Github\ROFL\ROFL\ROFL\bin\Debug\netstandard2.0\ROFL.deps.json
+C:\Users\Alan\Documents\Github\ROFL\ROFL\ROFL\bin\Debug\netstandard2.0\ROFL.dll
+C:\Users\Alan\Documents\Github\ROFL\ROFL\ROFL\bin\Debug\netstandard2.0\ref\ROFL.dll
+C:\Users\Alan\Documents\Github\ROFL\ROFL\ROFL\bin\Debug\netstandard2.0\ROFL.pdb
+C:\Users\Alan\Documents\Github\ROFL\ROFL\ROFL\obj\Debug\netstandard2.0\ROFL.csprojAssemblyReference.cache
+C:\Users\Alan\Documents\Github\ROFL\ROFL\ROFL\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\Alan\Documents\Github\ROFL\ROFL\ROFL\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+C:\Users\Alan\Documents\Github\ROFL\ROFL\ROFL\obj\Debug\netstandard2.0\ROFL.csproj.CoreCompileInputs.cache
+C:\Users\Alan\Documents\Github\ROFL\ROFL\ROFL\obj\Debug\netstandard2.0\ROFL.AssemblyInfoInputs.cache
+C:\Users\Alan\Documents\Github\ROFL\ROFL\ROFL\obj\Debug\netstandard2.0\ROFL.AssemblyInfo.cs
+C:\Users\Alan\Documents\Github\ROFL\ROFL\ROFL\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\Alan\Documents\Github\ROFL\ROFL\ROFL\obj\Debug\netstandard2.0\ROFL.dll
+C:\Users\Alan\Documents\Github\ROFL\ROFL\ROFL\obj\Debug\netstandard2.0\ref\ROFL.dll
+C:\Users\Alan\Documents\Github\ROFL\ROFL\ROFL\obj\Debug\netstandard2.0\ROFL.pdb
