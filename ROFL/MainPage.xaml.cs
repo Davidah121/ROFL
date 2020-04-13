@@ -18,6 +18,7 @@ namespace ROFL
         DetectShakeTest dt;
         bool isGroup1 = true;
         bool b2Pressed = true;
+
         public MainPage()
         {
             InitializeComponent();
@@ -28,6 +29,8 @@ namespace ROFL
         {
             dt = new DetectShakeTest(Label1);
             dt.ToggleAccelerometer();
+
+            Group2.TranslateTo(500, 0, 0);
         }
 
         private void Button_Clicked(object sender, EventArgs e)
