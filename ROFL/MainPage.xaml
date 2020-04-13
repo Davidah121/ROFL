@@ -8,11 +8,23 @@
 
     <StackLayout>
         <!-- Place new controls here -->
-        <Label x:Name ="Label1" Text="Welcome to Xamarin.Forms!" 
+        <StackLayout x:Name="Group1" IsVisible="True">
+            <Label x:Name ="Label1" Text="Welcome to Xamarin.Forms!" 
            HorizontalOptions="Center"
            VerticalOptions="CenterAndExpand" />
 
-        <Button Text="BUTTON" Clicked="Button_Clicked" />
+            <Button Text="BUTTON" Clicked="Button_Clicked" />
+        </StackLayout>
+
+        <StackLayout x:Name="Group2" IsVisible="False">
+            <Label x:Name ="Label2" Text="This is apart of the second group" 
+           HorizontalOptions="Center"
+           VerticalOptions="CenterAndExpand" />
+
+            <Button Text="BUTTON2" Clicked="Button_Clicked_1" />
+        </StackLayout>
+
+        <Button Text="TransitionButton" Clicked="transitionStuff" />
     </StackLayout>
 
 </ContentPage>
