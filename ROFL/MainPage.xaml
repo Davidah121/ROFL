@@ -11,7 +11,7 @@
     <AbsoluteLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
         <!-- Place new controls here -->
         
-        <StackLayout x:Name="Group1" IsVisible="True" AbsoluteLayout.LayoutBounds="0, 0, 1, 1" AbsoluteLayout.LayoutFlags="All">
+        <StackLayout x:Name="Group1" IsVisible="False" AbsoluteLayout.LayoutBounds="0, 0, 1, 1" AbsoluteLayout.LayoutFlags="All">
             <Label x:Name ="Label1" Text="Welcome to Xamarin.Forms!" 
            HorizontalOptions="Center"
            VerticalOptions="CenterAndExpand" />
@@ -28,8 +28,43 @@
             <Button Text="BUTTON2" Clicked="Button_Clicked_1" />
             <Button Text="Goto Group1" Clicked="transitionStuff" />
         </StackLayout>
-
         
+        <!-- START OF RUN_MENU -->
+        <StackLayout x:Name="RunMenu" IsVisible="True" AbsoluteLayout.LayoutBounds="0, 0, 1, 1" AbsoluteLayout.LayoutFlags="All" Spacing="32">
+            
+            <Label x:Name="RunMenu_TitleText" Text="RUN!!!"
+                   HorizontalOptions="Center"
+                   TextDecorations="Underline"
+                   FontSize="Header" 
+                   TextColor="Black"/>
+            
+            <Label x:Name="RunMenu_StepsText" Text="Steps: 00000"
+                   HorizontalOptions="Start"
+                   FontSize="48"
+                   TextColor="Black"/>
+
+            <StackLayout Padding="0" Spacing="5" Orientation="Horizontal">
+                <Image x:Name="RunMenu_StarsTextIcon" Source="star128x128.png" WidthRequest="48" />
+                <Label x:Name="RunMenu_StarsText" Text=": 00000"
+                       HorizontalOptions="Start"
+                       FontSize="48"
+                       TextColor="Black"/>
+            </StackLayout>
+            
+            <Label x:Name="RunMenu_MultiplierText" Text="Multiplier: 0x"
+                   HorizontalOptions="Start"
+                   FontSize="48"
+                   TextColor="Black"/>
+            
+            <Label x:Name="RunMenu_TimerText" Text="Timer: 00:00:00"
+                   HorizontalOptions="Start"
+                   FontSize="48"
+                   TextColor="Black"/>
+
+            <Button x:Name="RunMenu_DoneButton" Text="I'm Done" HeightRequest="96" FontSize="Title" Clicked="RunMenu_DoneButtonClicked"/>
+            
+        </StackLayout>
+        <!-- END OF RUN_MENU -->
     </AbsoluteLayout>
 
 </ContentPage>

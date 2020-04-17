@@ -31,6 +31,7 @@ namespace ROFL
             dt.ToggleAccelerometer();
 
             Group2.TranslateTo(500, 0, 0);
+            RunMenu.TranslateTo(0, 0, 0);
         }
 
         private void Button_Clicked(object sender, EventArgs e)
@@ -85,5 +86,89 @@ namespace ROFL
         {
             doAnimation();
         }
+
+
+        #region RUN_MENU
+
+        //Mostly getters and setters
+        int steps = 0;
+        int time = 0; //in seconds
+        int multiplier = 0;
+        int startPoints = 0;
+        public int getSteps()
+        {
+            return steps;
+        }
+
+        public void setSteps(int s)
+        {
+            steps = s;
+            String k = s.ToString();
+            String originalText = "Steps: ";
+
+            RunMenu_StepsText.Text = originalText + k;
+        }
+
+        public int getStarPoints()
+        {
+            return startPoints;
+        }
+
+        public void setStarPoints(int s)
+        {
+            startPoints = s;
+            String k = s.ToString();
+            String originalText = ": ";
+
+            RunMenu_StepsText.Text = originalText + k;
+        }
+
+        public int getMultiplier()
+        {
+            return multiplier;
+        }
+
+        public void setMultiplier(int s)
+        {
+            String k = s.ToString();
+            String originalText = "Multiplier: ";
+            String originalText2 = "x";
+
+            RunMenu_StepsText.Text = originalText + k + originalText2;
+        }
+
+        public int getTimer()
+        {
+            return time;
+        }
+
+        public void setTimer(int s)
+        {
+            time = s;
+            //getTime in hour:min:sec format
+            int mins = (time / 60) % 60;
+            int hours = time / 3600 % 24;
+            int seconds = time % 60;
+
+            String k = s.ToString();
+            String originalText = "Timer: ";
+
+            RunMenu_StepsText.Text = originalText + hours.ToString() + ":" + mins.ToString() + ":" + seconds.ToString();
+        }
+
+        private void RunMenu_DoneButtonClicked(object sender, EventArgs e)
+        {
+
+        }
+
+        #endregion
+
+        #region LOOT_MENU
+
+        #endregion
+
+        #region LOOTING_MENU
+
+        #endregion
     }
 }

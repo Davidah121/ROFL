@@ -475,3 +475,4 @@ C:\Users\Alan\Documents\Github\ROFL\ROFL\ROFL.Android\obj\Debug\90\stamp\_Conver
 C:\Users\Alan\Documents\Github\ROFL\ROFL\ROFL.Android\obj\Debug\90\stamp\_GenerateJavaStubs.stamp
 C:\Users\Alan\Documents\Github\ROFL\ROFL\ROFL.Android\obj\Debug\90\stamp\_GeneratePackageManagerJava.stamp
 C:\Users\Alan\Documents\Github\ROFL\ROFL\ROFL.Android\obj\Debug\90\stamp\_ResolveLibraryProjectImports.stamp
+C:\Users\Alan\Documents\Github\ROFL\ROFL\ROFL.Android\obj\Debug\90\res\drawable\star128x128.png
