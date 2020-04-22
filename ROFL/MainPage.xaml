@@ -30,7 +30,7 @@
         </StackLayout>
         
         <!-- START OF RUN_MENU -->
-        <StackLayout x:Name="RunMenu" IsVisible="True" AbsoluteLayout.LayoutBounds="0, 0, 1, 1" AbsoluteLayout.LayoutFlags="All" Spacing="32">
+        <StackLayout x:Name="RunMenu" IsVisible="False" AbsoluteLayout.LayoutBounds="0, 0, 1, 1" AbsoluteLayout.LayoutFlags="All" Spacing="32">
             
             <Label x:Name="RunMenu_TitleText" Text="RUN!!!"
                    HorizontalOptions="Center"
@@ -65,6 +65,78 @@
             
         </StackLayout>
         <!-- END OF RUN_MENU -->
+        
+        <!-- START OF LOOT_MENU -->
+        <StackLayout x:Name="LootMenu" IsVisible="True" AbsoluteLayout.LayoutBounds="0, 0, 1, 1" AbsoluteLayout.LayoutFlags="All">
+
+            <Label x:Name="LootMenu_TitleText" Text="LOOT"
+                   HorizontalOptions="Center"
+                   TextDecorations="Underline"
+                   FontSize="Header" 
+                   TextColor="Black"/>
+            
+            <ScrollView VerticalScrollBarVisibility="Always" Visual="Default">
+                <Grid Padding="16" ColumnSpacing="32" RowSpacing="16">
+
+                    <Image Source="star128x128.png" Grid.Row="0" Grid.Column="0"/>
+                    <Image x:Name="character0Select" IsVisible="False" Source="circle128x128.png" Grid.Row="0" Grid.Column="0"/>
+                    <Button ClassId="character0" Opacity="1" Grid.Row="0" Grid.Column="0" Clicked="LootMenu_CharacterPicked" BorderColor="#000000" BorderWidth="2" BackgroundColor="#00000000"/>
+
+                    <Image Source="star128x128.png" Grid.Row="0" Grid.Column="1"/>
+                    <Image x:Name="character1Select" IsVisible="False" Source="circle128x128.png" Grid.Row="0" Grid.Column="1"/>
+                    <Button ClassId="character1" Opacity="1" Grid.Row="0" Grid.Column="1" Clicked="LootMenu_CharacterPicked" BorderColor="#000000" BorderWidth="2" BackgroundColor="#00000000"/>
+
+                    <Image Source="star128x128.png" Grid.Row="1" Grid.Column="0" />
+                    <Image x:Name="character2Select" IsVisible="False" Source="circle128x128.png" Grid.Row="1" Grid.Column="0"/>
+                    <Button ClassId="character2" Opacity="1" Grid.Row="1" Grid.Column="0" Clicked="LootMenu_CharacterPicked" BorderColor="#000000" BorderWidth="2" BackgroundColor="#00000000"/>
+
+                    <Image Source="star128x128.png" Grid.Row="1" Grid.Column="1" />
+                    <Image x:Name="character3Select" IsVisible="False" Source="circle128x128.png" Grid.Row="1" Grid.Column="1"/>
+                    <Button ClassId="character3" Opacity="1" Grid.Row="1" Grid.Column="1" Clicked="LootMenu_CharacterPicked" BorderColor="#000000" BorderWidth="2" BackgroundColor="#00000000"/>
+
+                    <Image Source="star128x128.png" Grid.Row="2" Grid.Column="0" />
+                    <Image x:Name="character4Select" IsVisible="False" Source="circle128x128.png" Grid.Row="2" Grid.Column="0"/>
+                    <Button ClassId="character4" Opacity="1" Grid.Row="2" Grid.Column="0" Clicked="LootMenu_CharacterPicked" BorderColor="#000000" BorderWidth="2" BackgroundColor="#00000000"/>
+
+                    <Image Source="star128x128.png" Grid.Row="2" Grid.Column="1" />
+                    <Image x:Name="character5Select" IsVisible="False" Source="circle128x128.png" Grid.Row="2" Grid.Column="1"/>
+                    <Button ClassId="character5" Opacity="1" Grid.Row="2" Grid.Column="1" Clicked="LootMenu_CharacterPicked" BorderColor="#000000" BorderWidth="2" BackgroundColor="#00000000"/>
+
+                    <Image Source="star128x128.png" Grid.Row="3" Grid.Column="0" />
+                    <Image x:Name="character6Select" IsVisible="False" Source="circle128x128.png" Grid.Row="3" Grid.Column="0"/>
+                    <Button ClassId="character6" Opacity="1" Grid.Row="3" Grid.Column="0" Clicked="LootMenu_CharacterPicked" BorderColor="#000000" BorderWidth="2" BackgroundColor="#00000000"/>
+
+                    <Image Source="star128x128.png" Grid.Row="3" Grid.Column="1" />
+                    <Image x:Name="character7Select" IsVisible="False" Source="circle128x128.png" Grid.Row="3" Grid.Column="1"/>
+                    <Button ClassId="character7" Opacity="1" Grid.Row="3" Grid.Column="1" Clicked="LootMenu_CharacterPicked" BorderColor="#000000" BorderWidth="2" BackgroundColor="#00000000"/>
+
+                    <Image Source="star128x128.png" Grid.Row="4" Grid.Column="0" />
+                    <Image x:Name="character8Select" IsVisible="False" Source="circle128x128.png" Grid.Row="4" Grid.Column="0"/>
+                    <Button ClassId="character8" Opacity="1" Grid.Row="4" Grid.Column="0" Clicked="LootMenu_CharacterPicked" BorderColor="#000000" BorderWidth="2" BackgroundColor="#00000000"/>
+
+                    <Image Source="star128x128.png" Grid.Row="4" Grid.Column="1" />
+                    <Image x:Name="character9Select" IsVisible="False" Source="circle128x128.png" Grid.Row="4" Grid.Column="1"/>
+                    <Button ClassId="character9" Opacity="1" Grid.Row="4" Grid.Column="1" Clicked="LootMenu_CharacterPicked" BorderColor="#000000" BorderWidth="2" BackgroundColor="#00000000"/>
+
+                    <Image Source="star128x128.png" Grid.Row="5" Grid.Column="0" />
+                    <Image x:Name="character10Select" IsVisible="False" Source="circle128x128.png" Grid.Row="5" Grid.Column="0"/>
+                    <Button ClassId="character10" Opacity="1" Grid.Row="5" Grid.Column="0" Clicked="LootMenu_CharacterPicked" BorderColor="#000000" BorderWidth="2" BackgroundColor="#00000000"/>
+
+                    <Image Source="star128x128.png" Grid.Row="5" Grid.Column="1" />
+                    <Image x:Name="character11Select" IsVisible="False" Source="circle128x128.png" Grid.Row="5" Grid.Column="1"/>
+                    <Button ClassId="character11" Opacity="1" Grid.Row="5" Grid.Column="1" Clicked="LootMenu_CharacterPicked" BorderColor="#000000" BorderWidth="2" BackgroundColor="#00000000"/>
+
+                </Grid>
+            </ScrollView>
+            
+            <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
+                <Button x:Name="LootMenu_BackButton" Text="BACK" HorizontalOptions="Start" WidthRequest="160" HeightRequest="64" Clicked="LootMenu_BackButton"/>
+                <Button x:Name="LootMenu_ReadyButton" Text="READY" HorizontalOptions="End" WidthRequest="160" HeightRequest="64" Clicked="LootMenu_ReadyButton"/>
+            </StackLayout>
+            
+        </StackLayout>
+        <!-- END OF LOOT_MENU -->
+        
     </AbsoluteLayout>
 
 </ContentPage>

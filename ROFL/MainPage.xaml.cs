@@ -164,7 +164,73 @@ namespace ROFL
         #endregion
 
         #region LOOT_MENU
+        Button LootMenu_c1Selected = null;
+        Button LootMenu_c2Selected = null;
 
+        bool LootMenu_swap = true;
+
+        private void LootMenu_CharacterPicked(object sender, EventArgs e)
+        {
+            string id = ((Button)sender).ClassId;
+            string selectImage = id + "Select";
+
+            Image objToEnable = (Image)FindByName(selectImage);
+
+            if (objToEnable.IsVisible == false)
+            {
+                objToEnable.IsVisible = true;
+
+                if (LootMenu_c1Selected == null)
+                {
+                    LootMenu_c1Selected = (Button)sender;
+                }
+                else if (LootMenu_c2Selected == null)
+                {
+                    LootMenu_c2Selected = (Button)sender;
+                }
+                else
+                {
+                    if(LootMenu_swap)
+                    {
+                        string oldSelectImage = LootMenu_c1Selected.ClassId + "Select";
+                        ((Image)FindByName(oldSelectImage)).IsVisible = false;
+
+                        LootMenu_c1Selected = ((Button)sender);
+                    }
+                    else
+                    {
+                        string oldSelectImage = LootMenu_c2Selected.ClassId + "Select";
+                        ((Image)FindByName(oldSelectImage)).IsVisible = false;
+
+                        LootMenu_c2Selected = ((Button)sender);
+                    }
+
+                    LootMenu_swap = !LootMenu_swap;
+                }
+            }
+            else
+            {
+                objToEnable.IsVisible = false;
+                if(LootMenu_c1Selected == (Button)sender)
+                {
+                    LootMenu_c1Selected = null;
+                }
+                else if(LootMenu_c2Selected == (Button)sender)
+                {
+                    LootMenu_c2Selected = null;
+                }
+            }
+        }
+
+        private void LootMenu_BackButton(object sender, EventArgs e)
+        {
+
+        }
+
+        private void LootMenu_ReadyButton(object sender, EventArgs e)
+        {
+
+        }
         #endregion
 
         #region LOOTING_MENU
