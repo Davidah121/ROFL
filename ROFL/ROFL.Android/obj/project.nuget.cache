@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "fVyCuDiHv9m3okqTIfWFzNVtgBP4b6WkvsX18zHeoEHrAnfi2kLEzS5vjTveGR3qM7lEfyxzEW2UCeuybeP4Pg==",
+  "dgSpecHash": "C1xw+R8aGyv/gZpzGOud4NzN66FdQDTWXfizEdd/huNWbve5AHHphYMLPTT38qGWQhB/5An+4E4s0r1FKuX9xQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Alan\\Documents\\GitHub\\ROFL\\ROFL\\ROFL\\ROFL.Android\\ROFL.Android.csproj",
+  "projectFilePath": "C:\\Users\\Alan\\Documents\\GitHub\\ROFL\\ROFL-Master\\ROFL\\ROFL.Android\\ROFL.Android.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Alan\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
     "C:\\Microsoft\\Xamarin\\NuGet\\xamarin.android.arch.core.common\\1.1.1.3\\xamarin.android.arch.core.common.1.1.1.3.nupkg.sha512",

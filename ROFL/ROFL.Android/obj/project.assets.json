@@ -1940,11 +1940,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Alan\\Documents\\GitHub\\ROFL\\ROFL\\ROFL\\ROFL.Android\\ROFL.Android.csproj",
+      "projectUniqueName": "C:\\Users\\Alan\\Documents\\GitHub\\ROFL\\ROFL-Master\\ROFL\\ROFL.Android\\ROFL.Android.csproj",
       "projectName": "ROFL.Android",
-      "projectPath": "C:\\Users\\Alan\\Documents\\GitHub\\ROFL\\ROFL\\ROFL\\ROFL.Android\\ROFL.Android.csproj",
+      "projectPath": "C:\\Users\\Alan\\Documents\\GitHub\\ROFL\\ROFL-Master\\ROFL\\ROFL.Android\\ROFL.Android.csproj",
       "packagesPath": "C:\\Users\\Alan\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Alan\\Documents\\GitHub\\ROFL\\ROFL\\ROFL\\ROFL.Android\\obj\\",
+      "outputPath": "C:\\Users\\Alan\\Documents\\GitHub\\ROFL\\ROFL-Master\\ROFL\\ROFL.Android\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
@@ -1965,8 +1965,8 @@
       "frameworks": {
         "monoandroid90": {
           "projectReferences": {
-            "C:\\Users\\Alan\\Documents\\GitHub\\ROFL\\ROFL\\ROFL\\ROFL\\ROFL.csproj": {
-              "projectPath": "C:\\Users\\Alan\\Documents\\GitHub\\ROFL\\ROFL\\ROFL\\ROFL\\ROFL.csproj"
+            "C:\\Users\\Alan\\Documents\\GitHub\\ROFL\\ROFL-Master\\ROFL\\ROFL\\ROFL.csproj": {
+              "projectPath": "C:\\Users\\Alan\\Documents\\GitHub\\ROFL\\ROFL-Master\\ROFL\\ROFL\\ROFL.csproj"
             }
           }
         }

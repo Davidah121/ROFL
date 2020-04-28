@@ -1024,11 +1024,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Alan\\Documents\\GitHub\\ROFL\\ROFL\\ROFL\\ROFL.iOS\\ROFL.iOS.csproj",
+      "projectUniqueName": "C:\\Users\\Alan\\Documents\\GitHub\\ROFL\\ROFL-Master\\ROFL\\ROFL.iOS\\ROFL.iOS.csproj",
       "projectName": "ROFL.iOS",
-      "projectPath": "C:\\Users\\Alan\\Documents\\GitHub\\ROFL\\ROFL\\ROFL\\ROFL.iOS\\ROFL.iOS.csproj",
+      "projectPath": "C:\\Users\\Alan\\Documents\\GitHub\\ROFL\\ROFL-Master\\ROFL\\ROFL.iOS\\ROFL.iOS.csproj",
       "packagesPath": "C:\\Users\\Alan\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Alan\\Documents\\GitHub\\ROFL\\ROFL\\ROFL\\ROFL.iOS\\obj\\",
+      "outputPath": "C:\\Users\\Alan\\Documents\\GitHub\\ROFL\\ROFL-Master\\ROFL\\ROFL.iOS\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
@@ -1049,8 +1049,8 @@
       "frameworks": {
         "xamarinios10": {
           "projectReferences": {
-            "C:\\Users\\Alan\\Documents\\GitHub\\ROFL\\ROFL\\ROFL\\ROFL\\ROFL.csproj": {
-              "projectPath": "C:\\Users\\Alan\\Documents\\GitHub\\ROFL\\ROFL\\ROFL\\ROFL\\ROFL.csproj"
+            "C:\\Users\\Alan\\Documents\\GitHub\\ROFL\\ROFL-Master\\ROFL\\ROFL\\ROFL.csproj": {
+              "projectPath": "C:\\Users\\Alan\\Documents\\GitHub\\ROFL\\ROFL-Master\\ROFL\\ROFL\\ROFL.csproj"
             }
           }
         }
