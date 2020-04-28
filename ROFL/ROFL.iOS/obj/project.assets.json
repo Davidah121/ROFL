@@ -1018,24 +1018,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\lol02\\.nuget\\packages\\": {},
+    "C:\\Users\\Alan\\.nuget\\packages\\": {},
     "C:\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\lol02\\source\\repos\\ROFL\\ROFL\\ROFL.iOS\\ROFL.iOS.csproj",
+      "projectUniqueName": "C:\\Users\\Alan\\Documents\\GitHub\\ROFL\\ROFL\\ROFL\\ROFL.iOS\\ROFL.iOS.csproj",
       "projectName": "ROFL.iOS",
-      "projectPath": "C:\\Users\\lol02\\source\\repos\\ROFL\\ROFL\\ROFL.iOS\\ROFL.iOS.csproj",
-      "packagesPath": "C:\\Users\\lol02\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\lol02\\source\\repos\\ROFL\\ROFL\\ROFL.iOS\\obj\\",
+      "projectPath": "C:\\Users\\Alan\\Documents\\GitHub\\ROFL\\ROFL\\ROFL\\ROFL.iOS\\ROFL.iOS.csproj",
+      "packagesPath": "C:\\Users\\Alan\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Alan\\Documents\\GitHub\\ROFL\\ROFL\\ROFL\\ROFL.iOS\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\"
       ],
       "configFilePaths": [
-        "C:\\Users\\lol02\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Alan\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
@@ -1049,8 +1049,8 @@
       "frameworks": {
         "xamarinios10": {
           "projectReferences": {
-            "C:\\Users\\lol02\\source\\repos\\ROFL\\ROFL\\ROFL\\ROFL.csproj": {
-              "projectPath": "C:\\Users\\lol02\\source\\repos\\ROFL\\ROFL\\ROFL\\ROFL.csproj"
+            "C:\\Users\\Alan\\Documents\\GitHub\\ROFL\\ROFL\\ROFL\\ROFL\\ROFL.csproj": {
+              "projectPath": "C:\\Users\\Alan\\Documents\\GitHub\\ROFL\\ROFL\\ROFL\\ROFL\\ROFL.csproj"
             }
           }
         }
