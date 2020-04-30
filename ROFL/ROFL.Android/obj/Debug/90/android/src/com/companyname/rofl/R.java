@@ -4581,11 +4581,12 @@ public final class R {
     public static final int notification_tile_bg=0x7f070079;
     public static final int notify_panel_notification_icon_bg=0x7f07007a;
     public static final int qmark=0x7f07007b;
-    public static final int shadystickman=0x7f07007c;
-    public static final int star128x128=0x7f07007d;
-    public static final int tooltip_frame_dark=0x7f07007e;
-    public static final int tooltip_frame_light=0x7f07007f;
-    public static final int tshirtstickman=0x7f070080;
+    public static final int rofllogo=0x7f07007c;
+    public static final int shadystickman=0x7f07007d;
+    public static final int star128x128=0x7f07007e;
+    public static final int tooltip_frame_dark=0x7f07007f;
+    public static final int tooltip_frame_light=0x7f070080;
+    public static final int tshirtstickman=0x7f070081;
   }
   public static final class id {
     public static final int ALT=0x7f080000;

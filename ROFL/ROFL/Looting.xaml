@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="ROFL.Looting"
+             BackgroundImageSource="LootingBackground.png">
+
+
+
+    <StackLayout x:Name="LootingMenu" AbsoluteLayout.LayoutBounds="0, 0, 1, 1" AbsoluteLayout.LayoutFlags="All">
+
+        <Label Text="LOOTing..."
+                   HorizontalOptions="Center"
+                   TextDecorations="Underline"
+                   FontSize="64" 
+                   TextColor="Black"
+               VerticalOptions="StartAndExpand"/>
+        <!-- Stuff in the Middle -->
+
+        <StackLayout Padding="8">
+            <Grid RowSpacing="8">
+                <Image x:Name="img2" Source="" Grid.Column="0" Grid.Row="2"/>
+                <Image x:Name="img1" Source="" Grid.Column="1" Grid.Row="2"/>
+            </Grid>
+        </StackLayout>
+
+        <StackLayout Padding="4" Spacing="8" Orientation="Horizontal" VerticalOptions="Center">
+            <Button Text="Cheer!" FontSize="36" WidthRequest="224" HeightRequest="64" Clicked="LootingMenu_CheerButton" />
+            <Image Source="star128x128.png" WidthRequest="64" HeightRequest="64"/>
+            <Label Text="0" 
+                       TextColor="Black"
+                       FontSize="48"/>
+        </StackLayout>
+
+        <StackLayout Padding="4" Spacing="32" Orientation="Horizontal">
+            <ImageButton Source="MenuArrow.png" WidthRequest="64" HeightRequest="64" Clicked="LootingMenu_BackButton"/>
+            <Button Text="Escape" FontSize="36" WidthRequest="224" HeightRequest="64" Clicked="LootingMenu_CheerButton" />
+        </StackLayout>
+
+    </StackLayout>
+</ContentPage>

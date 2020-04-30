@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="ROFL.RunMenu">
+    <ContentPage.Content>
+        <StackLayout x:Name="RunMenu_Layout" AbsoluteLayout.LayoutBounds="0, 0, 1, 1" AbsoluteLayout.LayoutFlags="All" Spacing="32">
+
+            <Label x:Name="RunMenu_TitleText" Text="RUN!!!"
+                   HorizontalOptions="Center"
+                   TextDecorations="Underline"
+                   FontSize="Header" 
+                   TextColor="Black"/>
+
+            <Label x:Name="RunMenu_StepsText" Text="Steps: 00000"
+                   HorizontalOptions="Start"
+                   FontSize="48"
+                   TextColor="Black"/>
+
+            <StackLayout Padding="0" Spacing="5" Orientation="Horizontal">
+                <Image x:Name="RunMenu_StarsTextIcon" Source="star128x128.png" WidthRequest="48" />
+                <Label x:Name="RunMenu_StarsText" Text=": 00000"
+                       HorizontalOptions="Start"
+                       FontSize="48"
+                       TextColor="Black"/>
+            </StackLayout>
+
+            <Label x:Name="RunMenu_MultiplierText" Text="Multiplier: 0x"
+                   HorizontalOptions="Start"
+                   FontSize="48"
+                   TextColor="Black"/>
+
+            <Label x:Name="RunMenu_TimerText" Text="Timer: 00:00:00"
+                   HorizontalOptions="Start"
+                   FontSize="48"
+                   TextColor="Black"/>
+
+            <Button x:Name="RunMenu_DoneButton" Text="I'm Done" HeightRequest="96" FontSize="Title" Clicked="Leave"/>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

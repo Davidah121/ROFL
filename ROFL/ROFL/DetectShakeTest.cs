@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Text;
 
 using Xamarin.Essentials;
@@ -12,20 +13,20 @@ namespace ROFL
         // Set speed delay for monitoring changes.
         SensorSpeed speed = SensorSpeed.Game;
         int count = 0;
-        Label editLabel;
-
-        public DetectShakeTest(Label l)
+        RunMenu r;
+        public DetectShakeTest(RunMenu r)
         {
             // Register for reading changes, be sure to unsubscribe when finished
             Accelerometer.ShakeDetected += Accelerometer_ShakeDetected;
-            editLabel = l;
+            this.r = r;
         }
 
         void Accelerometer_ShakeDetected(object sender, EventArgs e)
         {
             // Process shake event
+            Debug.WriteLine("SHAKE");
             count++;
-            editLabel.Text = "Shakes: " + count;
+            r.setSteps(count);
         }
 
         public void ToggleAccelerometer()

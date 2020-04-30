@@ -10,7 +10,7 @@ namespace ROFL
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+            MainPage = new TitlePage();
         }
 
         protected override void OnStart()

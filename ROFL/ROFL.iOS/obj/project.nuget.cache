@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "ZvumcL2qtV6RTDMzjhKfYjoBPkt1zLXvbnoKt4PCu7QV/S9Enxm/WQLK22X2g1xd+QzNOO2k3p0N05fjsLn+MQ==",
+  "dgSpecHash": "/mSqZ/rR1YVzn+zUDKY41vUvr4wtJNlQcT6DO6OofgGGP3oPSNyqAgMIYY35pbpV0CWma2M6Mundtf3boy0r/Q==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Alan\\Documents\\GitHub\\ROFL\\ROFL-Master\\ROFL\\ROFL.iOS\\ROFL.iOS.csproj",
+  "projectFilePath": "C:\\Users\\lol02\\source\\repos\\ROFL\\ROFL\\ROFL.iOS\\ROFL.iOS.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Alan\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "C:\\Users\\lol02\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "C:\\Users\\lol02\\.nuget\\packages\\xam.plugin.simpleaudioplayer\\1.4.0\\xam.plugin.simpleaudioplayer.1.4.0.nupkg.sha512",
     "C:\\Microsoft\\Xamarin\\NuGet\\xamarin.essentials\\1.3.1\\xamarin.essentials.1.3.1.nupkg.sha512",
     "C:\\Microsoft\\Xamarin\\NuGet\\xamarin.forms\\4.4.0.991265\\xamarin.forms.4.4.0.991265.nupkg.sha512"
   ],

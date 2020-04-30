@@ -5812,20 +5812,23 @@ namespace ROFL.Droid
 			// aapt resource value: 0x7F070076
 			public const int qmark = 2131165302;
 			
+			// aapt resource value: 0x7F070077
+			public const int rofllogo = 2131165303;
+			
 			// aapt resource value: 0x7F070004
 			public const int Shadystickman = 2131165188;
 			
-			// aapt resource value: 0x7F070077
-			public const int star128x128 = 2131165303;
-			
 			// aapt resource value: 0x7F070078
-			public const int tooltip_frame_dark = 2131165304;
+			public const int star128x128 = 2131165304;
 			
 			// aapt resource value: 0x7F070079
-			public const int tooltip_frame_light = 2131165305;
+			public const int tooltip_frame_dark = 2131165305;
 			
 			// aapt resource value: 0x7F07007A
-			public const int tshirtstickman = 2131165306;
+			public const int tooltip_frame_light = 2131165306;
+			
+			// aapt resource value: 0x7F07007B
+			public const int tshirtstickman = 2131165307;
 			
 			static Drawable()
 			{
