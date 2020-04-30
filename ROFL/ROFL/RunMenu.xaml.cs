@@ -12,28 +12,37 @@ namespace ROFL
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class RunMenu : ContentPage
     {
+        MainPage m;
+        bool timerContinue = true;
+        int timeCount = 0;
+        int mult = 1;
+        int steps = 0;
         DetectShakeTest dt;
-        public RunMenu()
+        public RunMenu(MainPage m)
         {
+            this.m = m;
             dt = new DetectShakeTest(this);
             dt.ToggleAccelerometer();
+            Device.StartTimer(TimeSpan.FromSeconds(1), () =>
+            {
+                timeCount++;
+                RunMenu_TimerText.Text = "Timer: " + timeCount + " seconds";
+                if ((timeCount % 30) == 0)
+                {
+                    mult++;
+                }
+                RunMenu_MultiplierText.Text = "Multiplier: " + mult + "x";
+                RunMenu_StarsText.Text = (mult * steps).ToString();
+                return timerContinue;
+            });
             InitializeComponent();
         }
         private async void Leave(object sender, EventArgs e)
         {
+            timerContinue = false;
+            m.Add_Stars(mult * steps);
             dt.ToggleAccelerometer();
             await Navigation.PopModalAsync();
-        }
-
-
-        //Mostly getters and setters
-        int steps = 0;
-        int time = 0; //in seconds
-        int multiplier = 0;
-        int startPoints = 0;
-        public int getSteps()
-        {
-            return steps;
         }
 
         public void setSteps(int s)
@@ -45,51 +54,5 @@ namespace ROFL
             RunMenu_StepsText.Text = originalText + k;
         }
 
-        public int getStarPoints()
-        {
-            return startPoints;
-        }
-
-        public void setStarPoints(int s)
-        {
-            startPoints = s;
-            String k = s.ToString();
-            String originalText = ": ";
-
-            RunMenu_StepsText.Text = originalText + k;
-        }
-
-        public int getMultiplier()
-        {
-            return multiplier;
-        }
-
-        public void setMultiplier(int s)
-        {
-            String k = s.ToString();
-            String originalText = "Multiplier: ";
-            String originalText2 = "x";
-
-            RunMenu_StepsText.Text = originalText + k + originalText2;
-        }
-
-        public int getTimer()
-        {
-            return time;
-        }
-
-        public void setTimer(int s)
-        {
-            time = s;
-            //getTime in hour:min:sec format
-            int mins = (time / 60) % 60;
-            int hours = time / 3600 % 24;
-            int seconds = time % 60;
-
-            String k = s.ToString();
-            String originalText = "Timer: ";
-
-            RunMenu_StepsText.Text = originalText + hours.ToString() + ":" + mins.ToString() + ":" + seconds.ToString();
-        }
     }
 }

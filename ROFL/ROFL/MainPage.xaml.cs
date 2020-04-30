@@ -14,6 +14,9 @@ namespace ROFL
     [DesignTimeVisible(false)]
     public partial class MainPage : ContentPage
     {
+        int stars = 0;
+        int money = 0;
+
 
         public MainPage()
         {
@@ -22,15 +25,15 @@ namespace ROFL
 
         private void Button_Loot(object sender, EventArgs e)
         {
-            Navigation.PushModalAsync(new LootMenu());
+            Navigation.PushModalAsync(new LootMenu(this));
         }
         private void Button_Find(object sender, EventArgs e)
         {
-            Navigation.PushModalAsync(new FindMenu());
+            Navigation.PushModalAsync(new FindMenu(this));
         }
         private void Button_Run(object sender, EventArgs e)
         {
-            Navigation.PushModalAsync(new RunMenu());
+            Navigation.PushModalAsync(new RunMenu(this));
         }
         //bonk
         private void Button_Clicked(object sender, EventArgs e)
@@ -38,5 +41,32 @@ namespace ROFL
 
         }
 
+        public void Add_Stars(int i)
+        {
+            this.stars += i;
+        }
+        
+        public int Get_Stars()
+        {
+            return stars;
+        }
+        
+        public void Spend_Stars(int i)
+        {
+            this.stars -= i;
+        }
+
+        public void Add_Cash(int i)
+        {
+            this.money += i;
+        }
+        public void Spend_Cash(int i)
+        {
+            this.money -= i;
+        }
+        public int Get_Cash()
+        {
+            return this.money;
+        }
     }
 }

@@ -29,7 +29,7 @@
         <StackLayout Padding="4" Spacing="8" Orientation="Horizontal" VerticalOptions="Center">
             <Button Text="Cheer!" FontSize="36" WidthRequest="224" HeightRequest="64" Clicked="LootingMenu_CheerButton" />
             <Image Source="star128x128.png" WidthRequest="64" HeightRequest="64"/>
-            <Label Text="0" 
+            <Label x:Name="Stars" Text="0" 
                        TextColor="Black"
                        FontSize="48"/>
         </StackLayout>

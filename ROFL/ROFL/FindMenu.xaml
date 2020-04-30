@@ -18,12 +18,12 @@
                 <StackLayout Spacing="16"  Orientation="Horizontal">
 
                     <Image Source="star128x128.png" WidthRequest="48" HeightRequest="48" />
-                    <Label Text=":5000" FontSize="40" TextColor="Black"/>
+                    <Label x:Name="Starcount" Text="0" FontSize="40" TextColor="Black"/>
                 </StackLayout>
 
                 <StackLayout Spacing="16" Orientation="Horizontal">
-                    <Label Text="$" FontSize="48" TextColor="Black" FontAttributes="Bold, Italic"  />
-                    <Label Text=":5000" FontSize="40" TextColor="Black"/>
+                    <Label Text="$:" FontSize="48" TextColor="Black" FontAttributes="Bold, Italic"  />
+                    <Label x:Name="Money" Text="0" FontSize="40" TextColor="Black"/>
                 </StackLayout >
             </StackLayout>
 

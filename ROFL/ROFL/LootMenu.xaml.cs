@@ -12,8 +12,10 @@ namespace ROFL
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class LootMenu : ContentPage
     {
-        public LootMenu()
+        MainPage m;
+        public LootMenu(MainPage m)
         {
+            this.m = m;
             InitializeComponent();
         }
 
@@ -119,7 +121,7 @@ namespace ROFL
 
         private async void LootMenu_ReadyButton(object sender, EventArgs e)
         {
-            await Navigation.PushModalAsync(new Looting(char1Source, char2Source));
+            await Navigation.PushModalAsync(new Looting(char1Source, char2Source, m));
         }
     }
 }

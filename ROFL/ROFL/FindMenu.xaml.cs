@@ -12,10 +12,19 @@ namespace ROFL
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class FindMenu : ContentPage
     {
+        int money = 0;
+        int stars = 0;
+        MainPage m;
         String[] people = { "Coolfightingstickman.png", "Cowboystickman.png", "hatstickman.png", "johnstickman.png", "Shadystickman.png", "tshirtstickman.png" };
-        public FindMenu()
+        public FindMenu(MainPage m)
         {
+            this.m = m;
+            money = m.Get_Cash();
+            stars = m.Get_Stars();
             InitializeComponent();
+            Starcount.Text = stars.ToString();
+            Money.Text = money.ToString();
+
         }
 
         private async void FindMenu_BackButton(object sender, EventArgs e)
@@ -25,10 +34,18 @@ namespace ROFL
 
         private async void Find_Button(object sender, EventArgs e)
         {
-            var rand = new Random();
-            int bumbo = rand.Next(0, people.Length);
-            await Navigation.PushModalAsync(new PersonGet(people[bumbo]), false);
-            
+            if (m.Get_Cash() >= 10)
+            {
+                var rand = new Random();
+                int bumbo = rand.Next(0, people.Length);
+                m.Spend_Cash(10);
+                Money.Text = m.Get_Cash().ToString();
+                await Navigation.PushModalAsync(new PersonGet(people[bumbo]), false);
+            }
+            else
+            {
+                //TODO: TELL THE PLAYER THEY AREN'T RICH ENOUGH
+            }
         }
     }
 }
