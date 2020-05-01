@@ -22,8 +22,16 @@ namespace ROFL
             money = m.Get_Cash();
             stars = m.Get_Stars();
             InitializeComponent();
-            Starcount.Text = stars.ToString();
-            Money.Text = money.ToString();
+
+            String sString = stars.ToString();
+            sString = sString.PadLeft(sString.Length + (4 - sString.Length), '0');
+
+            Starcount.Text = sString;
+
+            sString = money.ToString();
+            sString = sString.PadLeft(sString.Length + (4 - sString.Length), '0');
+
+            Money.Text = sString;
 
         }
 
@@ -45,6 +53,7 @@ namespace ROFL
             else
             {
                 //TODO: TELL THE PLAYER THEY AREN'T RICH ENOUGH
+                await DisplayAlert("", "Not enough Funds", "OK");
             }
         }
     }

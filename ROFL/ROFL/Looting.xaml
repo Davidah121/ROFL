@@ -17,6 +17,7 @@
                    FontSize="64" 
                    TextColor="Black"
                VerticalOptions="StartAndExpand"/>
+        
         <!-- Stuff in the Middle -->
 
         <StackLayout Padding="8">
@@ -36,7 +37,9 @@
 
         <StackLayout Padding="4" Spacing="32" Orientation="Horizontal">
             <ImageButton Source="MenuArrow.png" WidthRequest="64" HeightRequest="64" Clicked="LootingMenu_BackButton"/>
-            <Button Text="Escape" FontSize="36" WidthRequest="224" HeightRequest="64" Clicked="LootingMenu_CheerButton" />
+            
+            <!-- <Button Text="Escape" FontSize="36" WidthRequest="224" HeightRequest="64" Clicked="LootingMenu_BackButton" /> -->
+            
         </StackLayout>
 
     </StackLayout>

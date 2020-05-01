@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using Xamarin.Essentials;
 
 namespace ROFL
 {
@@ -22,7 +23,7 @@ namespace ROFL
             Stars.Text = m.Get_Stars().ToString();
         }
 
-        private void LootingMenu_CheerButton(object sender, EventArgs e)
+        private async void LootingMenu_CheerButton(object sender, EventArgs e)
         {
             if (m.Get_Stars() >= 50)
             {
@@ -33,6 +34,7 @@ namespace ROFL
             else
             {
                 //TODO: TELL THE PLAYER THEY AREN'T RICH ENOUGH
+                await DisplayAlert("", "Not Enough Stars", "OK");
             }
         }
 

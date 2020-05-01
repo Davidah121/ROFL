@@ -18,12 +18,12 @@
                 <StackLayout Spacing="16"  Orientation="Horizontal">
 
                     <Image Source="star128x128.png" WidthRequest="48" HeightRequest="48" />
-                    <Label x:Name="Starcount" Text="0" FontSize="40" TextColor="Black"/>
+                    <Label x:Name="Starcount" Text="0000" FontSize="40" TextColor="Black"/>
                 </StackLayout>
 
                 <StackLayout Spacing="16" Orientation="Horizontal">
                     <Label Text="$:" FontSize="48" TextColor="Black" FontAttributes="Bold, Italic"  />
-                    <Label x:Name="Money" Text="0" FontSize="40" TextColor="Black"/>
+                    <Label x:Name="Money" Text="0000" FontSize="40" TextColor="Black"/>
                 </StackLayout >
             </StackLayout>
 
@@ -38,22 +38,7 @@
                     </Grid.RowDefinitions>
 
                     <Button Text="$: 10" FontSize="32" Grid.Row="0" Grid.Column="0" WidthRequest="64" HeightRequest="16" Clicked="Find_Button"/>
-                    <Image Source="star128x128" Grid.Row="0" Grid.Column="1" />
-                </Grid>
-
-                <Label Text="Find 10" 
-                       FontSize="32" 
-                       TextColor="Black"
-                       TextDecorations="Underline"/>
-
-                <Grid ColumnSpacing="32">
-                    <Grid.RowDefinitions>
-                        <RowDefinition Height="64" />
-                    </Grid.RowDefinitions>
-
-                    <Button Text="$: 80" FontSize="32" Grid.Row="0" Grid.Column="0" WidthRequest="32" HeightRequest="16" Clicked="Find_Button"/>
-                    <Image Source="star128x128" Grid.Row="0" Grid.Column="1" />
-
+                    <Image Source="Box" Grid.Row="0" Grid.Column="1" />
                 </Grid>
             </StackLayout>
 

@@ -44,6 +44,10 @@ namespace ROFL
         public void Add_Stars(int i)
         {
             this.stars += i;
+            String sString = stars.ToString();
+            sString = sString.PadLeft(sString.Length + (4 - sString.Length), '0');
+
+            starLabel.Text = ": " + sString;
         }
         
         public int Get_Stars()
@@ -54,15 +58,27 @@ namespace ROFL
         public void Spend_Stars(int i)
         {
             this.stars -= i;
+            String sString = stars.ToString();
+            sString = sString.PadLeft(sString.Length + (4 - sString.Length), '0');
+
+            starLabel.Text = ": " + sString;
         }
 
         public void Add_Cash(int i)
         {
             this.money += i;
+            String sString = money.ToString();
+            sString = sString.PadLeft(sString.Length + (4 - sString.Length), '0');
+
+            starLabel.Text = ": " + sString;
         }
         public void Spend_Cash(int i)
         {
             this.money -= i;
+            String sString = money.ToString();
+            sString = sString.PadLeft(sString.Length + (4 - sString.Length), '0');
+
+            starLabel.Text = ": " + sString;
         }
         public int Get_Cash()
         {

@@ -60,3 +60,9 @@ C:\Users\lol02\source\repos\ROFL\ROFL\ROFL\obj\Debug\netstandard2.0\Looting.xaml
 C:\Users\lol02\source\repos\ROFL\ROFL\ROFL\obj\Debug\netstandard2.0\LootMenu.xaml.g.cs
 C:\Users\lol02\source\repos\ROFL\ROFL\ROFL\obj\Debug\netstandard2.0\RunMenu.xaml.g.cs
 C:\Users\lol02\source\repos\ROFL\ROFL\ROFL\obj\Debug\netstandard2.0\PersonGet.xaml.g.cs
+C:\Users\Alan\Documents\GitHub\ROFL\ROFL-Master\ROFL\ROFL\obj\Debug\netstandard2.0\FindMenu.xaml.g.cs
+C:\Users\Alan\Documents\GitHub\ROFL\ROFL-Master\ROFL\ROFL\obj\Debug\netstandard2.0\Looting.xaml.g.cs
+C:\Users\Alan\Documents\GitHub\ROFL\ROFL-Master\ROFL\ROFL\obj\Debug\netstandard2.0\LootMenu.xaml.g.cs
+C:\Users\Alan\Documents\GitHub\ROFL\ROFL-Master\ROFL\ROFL\obj\Debug\netstandard2.0\PersonGet.xaml.g.cs
+C:\Users\Alan\Documents\GitHub\ROFL\ROFL-Master\ROFL\ROFL\obj\Debug\netstandard2.0\RunMenu.xaml.g.cs
+C:\Users\Alan\Documents\GitHub\ROFL\ROFL-Master\ROFL\ROFL\obj\Debug\netstandard2.0\TitlePage.xaml.g.cs

@@ -11,7 +11,7 @@ namespace ROFL
     public class DetectShakeTest
     {
         // Set speed delay for monitoring changes.
-        SensorSpeed speed = SensorSpeed.Game;
+        SensorSpeed speed = SensorSpeed.Fastest;
         int count = 0;
         RunMenu r;
         public DetectShakeTest(RunMenu r)
@@ -26,7 +26,10 @@ namespace ROFL
             // Process shake event
             Debug.WriteLine("SHAKE");
             count++;
-            r.setSteps(count);
+            MainThread.BeginInvokeOnMainThread(() =>
+            {
+                r.setSteps(count);
+            });
         }
 
         public void ToggleAccelerometer()

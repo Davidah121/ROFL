@@ -10,6 +10,23 @@
 
 
     <StackLayout IsVisible="True" Margin="20" >
+        
+        <StackLayout Padding="0" Spacing="5" Orientation="Horizontal" HorizontalOptions="Center">
+            <Image Source="star128x128.png" WidthRequest="24" />
+            <Label x:Name="starLabel" Text=": 0000"
+                       FontSize="24"
+                       TextColor="Black"
+                       Padding="0,0,128,0"/>
+
+            <Label Text="$"
+                       FontSize="24"
+                       TextColor="Black"/>
+
+            <Label x:Name="moneyLabel" Text=": 0000"
+                       FontSize="24"
+                       TextColor="Black"/>
+        </StackLayout>
+        
         <Button Text="LOOT" FontSize="24" VerticalOptions="CenterAndExpand" Clicked="Button_Loot"/>
         <Button Text="RUN" FontSize="24" VerticalOptions="CenterAndExpand" Clicked="Button_Run"/>
         <Button Text="FIND" FontSize="24" VerticalOptions="CenterAndExpand" Clicked="Button_Find"/>

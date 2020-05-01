@@ -14,14 +14,14 @@
                    FontSize="Header" 
                    TextColor="Black"/>
 
-            <Label x:Name="RunMenu_StepsText" Text="Steps: 00000"
+            <Label x:Name="RunMenu_StepsText" Text="Steps: 0000"
                    HorizontalOptions="Start"
                    FontSize="48"
                    TextColor="Black"/>
 
             <StackLayout Padding="0" Spacing="5" Orientation="Horizontal">
                 <Image x:Name="RunMenu_StarsTextIcon" Source="star128x128.png" WidthRequest="48" />
-                <Label x:Name="RunMenu_StarsText" Text=": 00000"
+                <Label x:Name="RunMenu_StarsText" Text=": 0000"
                        HorizontalOptions="Start"
                        FontSize="48"
                        TextColor="Black"/>
